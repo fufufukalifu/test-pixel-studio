@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Stage 2</title>
+	<div>
+		<p>Nama : Opik Sutisna</p>
+		<p>Email : Opik@mail.unpas.ac.id</p>
+	</div>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function printMyName(){
+			var n = 100;
+			var i = 1;
+			var myName = "";
+			var multiple_three, multiple_five, multiple_both;
+			for (i;i<=n; i++) {
+				multiple_three = i%3==0;
+				multiple_five = i%5==0;
+				multiple_both = (multiple_three || multiple_five);
+						
+			if (multiple_both) {
+				if (multiple_three) {
+					myName +="Opik ";	
+				}
+				
+				if(multiple_five){
+					myName +="Sutisna";
+				}		
+				myName +='\n';
+			}else{
+				myName +=i;
+				myName +='\n';
+
+			}
+		}
+			return myName;
+
+	}
+
+		console.log(printMyName());
+	</script>
+</body>
+</html>
